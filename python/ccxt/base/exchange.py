@@ -8,30 +8,30 @@ __version__ = '4.3.18'
 
 # -----------------------------------------------------------------------------
 
-from ccxt.base.errors import ExchangeError
-from ccxt.base.errors import NetworkError
-from ccxt.base.errors import NotSupported
-from ccxt.base.errors import AuthenticationError
-from ccxt.base.errors import DDoSProtection
-from ccxt.base.errors import RequestTimeout
-from ccxt.base.errors import ExchangeNotAvailable
-from ccxt.base.errors import InvalidAddress
-from ccxt.base.errors import InvalidOrder
-from ccxt.base.errors import ArgumentsRequired
-from ccxt.base.errors import BadSymbol
-from ccxt.base.errors import NullResponse
-from ccxt.base.errors import RateLimitExceeded
-from ccxt.base.errors import BadRequest
-from ccxt.base.errors import BadResponse
-from ccxt.base.errors import ProxyError
+from ccxt_versions.v_4_3_18.base.errors import ExchangeError
+from ccxt_versions.v_4_3_18.base.errors import NetworkError
+from ccxt_versions.v_4_3_18.base.errors import NotSupported
+from ccxt_versions.v_4_3_18.base.errors import AuthenticationError
+from ccxt_versions.v_4_3_18.base.errors import DDoSProtection
+from ccxt_versions.v_4_3_18.base.errors import RequestTimeout
+from ccxt_versions.v_4_3_18.base.errors import ExchangeNotAvailable
+from ccxt_versions.v_4_3_18.base.errors import InvalidAddress
+from ccxt_versions.v_4_3_18.base.errors import InvalidOrder
+from ccxt_versions.v_4_3_18.base.errors import ArgumentsRequired
+from ccxt_versions.v_4_3_18.base.errors import BadSymbol
+from ccxt_versions.v_4_3_18.base.errors import NullResponse
+from ccxt_versions.v_4_3_18.base.errors import RateLimitExceeded
+from ccxt_versions.v_4_3_18.base.errors import BadRequest
+from ccxt_versions.v_4_3_18.base.errors import BadResponse
+from ccxt_versions.v_4_3_18.base.errors import ProxyError
 
 # -----------------------------------------------------------------------------
 
-from ccxt.base.decimal_to_precision import decimal_to_precision
-from ccxt.base.decimal_to_precision import DECIMAL_PLACES, TICK_SIZE, NO_PADDING, TRUNCATE, ROUND, ROUND_UP, ROUND_DOWN, SIGNIFICANT_DIGITS
-from ccxt.base.decimal_to_precision import number_to_string
-from ccxt.base.precise import Precise
-from ccxt.base.types import BalanceAccount, Currency, IndexType, OrderSide, OrderType, Trade, OrderRequest, Market, MarketType, Str, Num, Strings, CancellationRequest
+from ccxt_versions.v_4_3_18.base.decimal_to_precision import decimal_to_precision
+from ccxt_versions.v_4_3_18.base.decimal_to_precision import DECIMAL_PLACES, TICK_SIZE, NO_PADDING, TRUNCATE, ROUND, ROUND_UP, ROUND_DOWN, SIGNIFICANT_DIGITS
+from ccxt_versions.v_4_3_18.base.decimal_to_precision import number_to_string
+from ccxt_versions.v_4_3_18.base.precise import Precise
+from ccxt_versions.v_4_3_18.base.types import BalanceAccount, Currency, IndexType, OrderSide, OrderType, Trade, OrderRequest, Market, MarketType, Str, Num, Strings, CancellationRequest
 
 # -----------------------------------------------------------------------------
 
@@ -45,8 +45,8 @@ from cryptography.hazmat.primitives.serialization import load_pem_private_key
 # -----------------------------------------------------------------------------
 
 # ecdsa signing
-from ccxt.static_dependencies import ecdsa
-from ccxt.static_dependencies import keccak
+from ccxt_versions.v_4_3_18.static_dependencies import ecdsa
+from ccxt_versions.v_4_3_18.static_dependencies import keccak
 
 # eddsa signing
 try:
@@ -55,9 +55,9 @@ except ImportError:
     eddsa = None
 
 # eth signing
-from ccxt.static_dependencies.ethereum import abi
-from ccxt.static_dependencies.ethereum import account
-from ccxt.static_dependencies.msgpack import packb
+from ccxt_versions.v_4_3_18.static_dependencies.ethereum import abi
+from ccxt_versions.v_4_3_18.static_dependencies.ethereum import account
+from ccxt_versions.v_4_3_18.static_dependencies.msgpack import packb
 
 
 # -----------------------------------------------------------------------------
@@ -100,7 +100,7 @@ from time import mktime
 from wsgiref.handlers import format_date_time
 import urllib.parse as _urlencode
 from typing import Any, List
-from ccxt.base.types import Int
+from ccxt_versions.v_4_3_18.base.types import Int
 
 # -----------------------------------------------------------------------------
 

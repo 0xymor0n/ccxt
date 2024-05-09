@@ -1,5 +1,5 @@
 import asyncio
-from ccxt import ExchangeClosedByUser
+from ccxt_versions.v_4_3_18 import ExchangeClosedByUser
 
 
 class Future(asyncio.Future):

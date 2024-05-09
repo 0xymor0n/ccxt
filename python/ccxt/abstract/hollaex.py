@@ -1,4 +1,4 @@
-from ccxt.base.types import Entry
+from ccxt_versions.v_4_3_18.base.types import Entry
 
 
 class ImplicitAPI:

@@ -15,7 +15,7 @@ sys.path.append(root)
 
 # ------------------------------------------------------------------------------
 
-import ccxt  # noqa: E402
+import ccxt_versions.v_4_3_18  # noqa: E402
 
 # ------------------------------------------------------------------------------
 
@@ -37,7 +37,7 @@ market = {
     }
 }
 
-exchange = ccxt.Exchange({
+exchange = ccxt_versions.v_4_3_18.Exchange({
     'id': 'mock',
     'markets': {'FOO/BAR': market},
 })

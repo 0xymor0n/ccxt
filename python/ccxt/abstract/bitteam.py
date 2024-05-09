@@ -1,4 +1,4 @@
-from ccxt.base.types import Entry
+from ccxt_versions.v_4_3_18.base.types import Entry
 
 
 class ImplicitAPI:
@@ -13,17 +13,17 @@ class ImplicitAPI:
     public_get_trade_api_rates = publicGetTradeApiRates = Entry('trade/api/rates', 'public', 'GET', {'cost': 1})
     public_get_trade_api_trade_id = publicGetTradeApiTradeId = Entry('trade/api/trade/{id}', 'public', 'GET', {'cost': 1})
     public_get_trade_api_trades = publicGetTradeApiTrades = Entry('trade/api/trades', 'public', 'GET', {'cost': 1})
-    public_get_trade_api_ccxt_pairs = publicGetTradeApiCcxtPairs = Entry('trade/api/ccxt/pairs', 'public', 'GET', {'cost': 1})
+    public_get_trade_api_ccxt_versions.v_4_3_18_pairs = publicGetTradeApiCcxtPairs = Entry('trade/api/ccxt/pairs', 'public', 'GET', {'cost': 1})
     public_get_trade_api_cmc_assets = publicGetTradeApiCmcAssets = Entry('trade/api/cmc/assets', 'public', 'GET', {'cost': 1})
     public_get_trade_api_cmc_orderbook_pair = publicGetTradeApiCmcOrderbookPair = Entry('trade/api/cmc/orderbook/{pair}', 'public', 'GET', {'cost': 1})
     public_get_trade_api_cmc_summary = publicGetTradeApiCmcSummary = Entry('trade/api/cmc/summary', 'public', 'GET', {'cost': 1})
     public_get_trade_api_cmc_ticker = publicGetTradeApiCmcTicker = Entry('trade/api/cmc/ticker', 'public', 'GET', {'cost': 1})
     public_get_trade_api_cmc_trades_pair = publicGetTradeApiCmcTradesPair = Entry('trade/api/cmc/trades/{pair}', 'public', 'GET', {'cost': 1})
-    private_get_trade_api_ccxt_balance = privateGetTradeApiCcxtBalance = Entry('trade/api/ccxt/balance', 'private', 'GET', {'cost': 1})
-    private_get_trade_api_ccxt_order_id = privateGetTradeApiCcxtOrderId = Entry('trade/api/ccxt/order/{id}', 'private', 'GET', {'cost': 1})
-    private_get_trade_api_ccxt_ordersofuser = privateGetTradeApiCcxtOrdersOfUser = Entry('trade/api/ccxt/ordersOfUser', 'private', 'GET', {'cost': 1})
-    private_get_trade_api_ccxt_tradesofuser = privateGetTradeApiCcxtTradesOfUser = Entry('trade/api/ccxt/tradesOfUser', 'private', 'GET', {'cost': 1})
+    private_get_trade_api_ccxt_versions.v_4_3_18_balance = privateGetTradeApiCcxtBalance = Entry('trade/api/ccxt/balance', 'private', 'GET', {'cost': 1})
+    private_get_trade_api_ccxt_versions.v_4_3_18_order_id = privateGetTradeApiCcxtOrderId = Entry('trade/api/ccxt/order/{id}', 'private', 'GET', {'cost': 1})
+    private_get_trade_api_ccxt_versions.v_4_3_18_ordersofuser = privateGetTradeApiCcxtOrdersOfUser = Entry('trade/api/ccxt/ordersOfUser', 'private', 'GET', {'cost': 1})
+    private_get_trade_api_ccxt_versions.v_4_3_18_tradesofuser = privateGetTradeApiCcxtTradesOfUser = Entry('trade/api/ccxt/tradesOfUser', 'private', 'GET', {'cost': 1})
     private_get_trade_api_transactionsofuser = privateGetTradeApiTransactionsOfUser = Entry('trade/api/transactionsOfUser', 'private', 'GET', {'cost': 1})
-    private_post_trade_api_ccxt_cancel_all_order = privatePostTradeApiCcxtCancelAllOrder = Entry('trade/api/ccxt/cancel-all-order', 'private', 'POST', {'cost': 1})
-    private_post_trade_api_ccxt_cancelorder = privatePostTradeApiCcxtCancelorder = Entry('trade/api/ccxt/cancelorder', 'private', 'POST', {'cost': 1})
-    private_post_trade_api_ccxt_ordercreate = privatePostTradeApiCcxtOrdercreate = Entry('trade/api/ccxt/ordercreate', 'private', 'POST', {'cost': 1})
+    private_post_trade_api_ccxt_versions.v_4_3_18_cancel_all_order = privatePostTradeApiCcxtCancelAllOrder = Entry('trade/api/ccxt/cancel-all-order', 'private', 'POST', {'cost': 1})
+    private_post_trade_api_ccxt_versions.v_4_3_18_cancelorder = privatePostTradeApiCcxtCancelorder = Entry('trade/api/ccxt/cancelorder', 'private', 'POST', {'cost': 1})
+    private_post_trade_api_ccxt_versions.v_4_3_18_ordercreate = privatePostTradeApiCcxtOrdercreate = Entry('trade/api/ccxt/ordercreate', 'private', 'POST', {'cost': 1})

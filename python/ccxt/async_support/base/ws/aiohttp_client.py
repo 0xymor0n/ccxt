@@ -4,9 +4,9 @@ import json
 from asyncio import sleep, ensure_future
 from aiohttp import WSMsgType
 from .functions import milliseconds, iso8601, is_json_encoded_object
-from ccxt.async_support.base.ws.client import Client
-from ccxt.async_support.base.ws.functions import gunzip, inflate
-from ccxt import NetworkError, RequestTimeout, ExchangeClosedByUser
+from ccxt_versions.v_4_3_18.async_support.base.ws.client import Client
+from ccxt_versions.v_4_3_18.async_support.base.ws.functions import gunzip, inflate
+from ccxt_versions.v_4_3_18 import NetworkError, RequestTimeout, ExchangeClosedByUser
 
 
 class AiohttpClient(Client):

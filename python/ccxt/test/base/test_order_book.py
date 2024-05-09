@@ -12,8 +12,8 @@ sys.path.append(root)
 # ----------------------------------------------------------------------------
 # -*- coding: utf-8 -*-
 
-from ccxt.base.precise import Precise  # noqa E402
-from ccxt.test.base import test_shared_methods  # noqa E402
+from ccxt_versions.v_4_3_18.base.precise import Precise  # noqa E402
+from ccxt_versions.v_4_3_18.test.base import test_shared_methods  # noqa E402
 
 def test_order_book(exchange, skipped_properties, method, orderbook, symbol):
     format = {

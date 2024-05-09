@@ -11,14 +11,14 @@ sys.path.append(root)
 
 # ----------------------------------------------------------------------------
 
-import ccxt  # noqa: F402
-from ccxt.base.decimal_to_precision import ROUND_UP, ROUND_DOWN  # noqa F401
+import ccxt_versions.v_4_3_18  # noqa: F402
+from ccxt_versions.v_4_3_18.base.decimal_to_precision import ROUND_UP, ROUND_DOWN  # noqa F401
 
 # ----------------------------------------------------------------------------
 
 # @ts-nocheck
 
-exchange = ccxt.Exchange({
+exchange = ccxt_versions.v_4_3_18.Exchange({
     'id': 'regirock',
 })
 

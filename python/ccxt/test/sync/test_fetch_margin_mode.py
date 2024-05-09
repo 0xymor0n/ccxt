@@ -12,7 +12,7 @@ sys.path.append(root)
 # ----------------------------------------------------------------------------
 # -*- coding: utf-8 -*-
 
-from ccxt.test.base import test_margin_mode  # noqa E402
+from ccxt_versions.v_4_3_18.test.base import test_margin_mode  # noqa E402
 
 def test_fetch_margin_mode(exchange, skipped_properties, symbol):
     method = 'fetchMarginMode'

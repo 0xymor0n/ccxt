@@ -11,10 +11,10 @@ sys.path.append(root)
 
 # ----------------------------------------------------------------------------
 
-import ccxt  # noqa: F402
+import ccxt_versions.v_4_3_18  # noqa: F402
 import hashlib  # noqa: F402
 
-Exchange = ccxt.Exchange
+Exchange = ccxt_versions.v_4_3_18.Exchange
 hash = Exchange.hash
 hmac = Exchange.hmac
 ecdsa = Exchange.ecdsa

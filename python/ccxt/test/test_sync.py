@@ -17,19 +17,19 @@ DIR_NAME = os.path.dirname(os.path.abspath(__file__))
 root = os.path.dirname(os.path.dirname(DIR_NAME))
 sys.path.append(root)
 
-import ccxt  # noqa: E402
-import ccxt.pro as ccxtpro  # noqa: E402
+import ccxt_versions.v_4_3_18  # noqa: E402
+import ccxt_versions.v_4_3_18.pro as ccxt_versions.v_4_3_18pro  # noqa: E402
 
 # ------------------------------------------------------------------------------
 # from typing import Optional
 # from typing import List
-from ccxt.base.errors import NotSupported
-from ccxt.base.errors import ProxyError
-from ccxt.base.errors import OperationFailed
+from ccxt_versions.v_4_3_18.base.errors import NotSupported
+from ccxt_versions.v_4_3_18.base.errors import ProxyError
+from ccxt_versions.v_4_3_18.base.errors import OperationFailed
 # from ccxt.base.errors import ExchangeError
-from ccxt.base.errors import ExchangeNotAvailable
-from ccxt.base.errors import OnMaintenance
-from ccxt.base.errors import AuthenticationError
+from ccxt_versions.v_4_3_18.base.errors import ExchangeNotAvailable
+from ccxt_versions.v_4_3_18.base.errors import OnMaintenance
+from ccxt_versions.v_4_3_18.base.errors import AuthenticationError
 
 # ------------------------------------------------------------------------------
 
@@ -73,8 +73,8 @@ parser.parse_args(namespace=argv)
 
 # ------------------------------------------------------------------------------
 
-path = os.path.dirname(ccxt.__file__)
-if 'site-packages' in os.path.dirname(ccxt.__file__):
+path = os.path.dirname(ccxt_versions.v_4_3_18.__file__)
+if 'site-packages' in os.path.dirname(ccxt_versions.v_4_3_18.__file__):
     raise Exception("You are running test_async.py/test.py against a globally-installed version of the library! It was previously installed into your site-packages folder by pip or pip3. To ensure testing against the local folder uninstall it first with pip uninstall ccxt or pip3 uninstall ccxt")
 
 # ------------------------------------------------------------------------------
@@ -225,8 +225,8 @@ def set_exchange_prop(exchange, prop, value):
 
 def init_exchange(exchangeId, args, is_ws=False):
     if (is_ws):
-        return getattr(ccxtpro, exchangeId)(args)
-    return getattr(ccxt, exchangeId)(args)
+        return getattr(ccxt_versions.v_4_3_18pro, exchangeId)(args)
+    return getattr(ccxt_versions.v_4_3_18, exchangeId)(args)
 
 
 def get_test_files(properties, ws=False):
@@ -255,7 +255,7 @@ def close(exchange):
 def is_null_value(value):
     return value is None
 
-def set_fetch_response(exchange: ccxt.Exchange, data):
+def set_fetch_response(exchange: ccxt_versions.v_4_3_18.Exchange, data):
     def fetch(url, method='GET', headers=None, body=None):
         return data
     exchange.fetch = fetch

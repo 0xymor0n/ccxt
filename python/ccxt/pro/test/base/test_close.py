@@ -5,8 +5,8 @@ root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.d
 sys.path.append(root)
 
 from asyncio import run, sleep, gather
-from ccxt.base.errors import ExchangeClosedByUser  # noqa E402
-import ccxt.pro
+from ccxt_versions.v_4_3_18.base.errors import ExchangeClosedByUser  # noqa E402
+import ccxt_versions.v_4_3_18.pro
 
 async def watch_ticker_loop(exchange):
     while True:
@@ -26,7 +26,7 @@ async def close_after(exchange, ms):
 
 
 async def test_close():
-    exchange = ccxt.pro.binance()
+    exchange = ccxt_versions.v_4_3_18.pro.binance()
     # exchange.verbose = True
     # --------------------------------------------
     print('Testing exchange.close(): No future awaiting, should close with no errors')

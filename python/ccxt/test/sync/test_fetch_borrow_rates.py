@@ -13,7 +13,7 @@ sys.path.append(root)
 # -*- coding: utf-8 -*-
 
 
-from ccxt.test.base import test_borrow_rate  # noqa E402
+from ccxt_versions.v_4_3_18.test.base import test_borrow_rate  # noqa E402
 
 
 def test_fetch_borrow_rates(exchange, skipped_properties):

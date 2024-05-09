@@ -12,9 +12,9 @@ sys.path.append(root)
 # ----------------------------------------------------------------------------
 # -*- coding: utf-8 -*-
 
-from ccxt.base.errors import InvalidNonce  # noqa E402
-from ccxt.test.base import test_order_book  # noqa E402
-from ccxt.test.base import test_shared_methods  # noqa E402
+from ccxt_versions.v_4_3_18.base.errors import InvalidNonce  # noqa E402
+from ccxt_versions.v_4_3_18.test.base import test_order_book  # noqa E402
+from ccxt_versions.v_4_3_18.test.base import test_shared_methods  # noqa E402
 
 async def test_watch_order_book_for_symbols(exchange, skipped_properties, symbols):
     method = 'watchOrderBookForSymbols'

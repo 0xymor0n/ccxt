@@ -16,27 +16,27 @@ import sys
 import yarl
 import math
 from typing import Any, List
-from ccxt.base.types import Int, Str, Num, Strings
+from ccxt_versions.v_4_3_18.base.types import Int, Str, Num, Strings
 
 # -----------------------------------------------------------------------------
 
-from ccxt.async_support.base.throttler import Throttler
+from ccxt_versions.v_4_3_18.async_support.base.throttler import Throttler
 
 # -----------------------------------------------------------------------------
 
-from ccxt.base.errors import BaseError, BadSymbol, BadRequest, BadResponse, ExchangeError, ExchangeNotAvailable, RequestTimeout, NotSupported, NullResponse, InvalidAddress, RateLimitExceeded
-from ccxt.base.types import OrderType, OrderSide, OrderRequest, CancellationRequest
+from ccxt_versions.v_4_3_18.base.errors import BaseError, BadSymbol, BadRequest, BadResponse, ExchangeError, ExchangeNotAvailable, RequestTimeout, NotSupported, NullResponse, InvalidAddress, RateLimitExceeded
+from ccxt_versions.v_4_3_18.base.types import OrderType, OrderSide, OrderRequest, CancellationRequest
 
 # -----------------------------------------------------------------------------
 
-from ccxt.base.exchange import Exchange as BaseExchange, ArgumentsRequired
+from ccxt_versions.v_4_3_18.base.exchange import Exchange as BaseExchange, ArgumentsRequired
 
 # -----------------------------------------------------------------------------
 
-from ccxt.async_support.base.ws.functions import inflate, inflate64, gunzip
-from ccxt.async_support.base.ws.fast_client import FastClient
-from ccxt.async_support.base.ws.future import Future
-from ccxt.async_support.base.ws.order_book import OrderBook, IndexedOrderBook, CountedOrderBook
+from ccxt_versions.v_4_3_18.async_support.base.ws.functions import inflate, inflate64, gunzip
+from ccxt_versions.v_4_3_18.async_support.base.ws.fast_client import FastClient
+from ccxt_versions.v_4_3_18.async_support.base.ws.future import Future
+from ccxt_versions.v_4_3_18.async_support.base.ws.order_book import OrderBook, IndexedOrderBook, CountedOrderBook
 
 
 # -----------------------------------------------------------------------------

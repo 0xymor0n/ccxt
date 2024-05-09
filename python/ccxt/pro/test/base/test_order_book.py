@@ -14,7 +14,7 @@ sys.path.append(root)
 
 
 
-from ccxt.async_support.base.ws.order_book import OrderBook, IndexedOrderBook, CountedOrderBook  # noqa: F402
+from ccxt_versions.v_4_3_18.async_support.base.ws.order_book import OrderBook, IndexedOrderBook, CountedOrderBook  # noqa: F402
 
 
 

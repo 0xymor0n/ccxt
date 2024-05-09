@@ -3,7 +3,7 @@
 import asyncio
 import socket
 import collections
-from ccxt.async_support.base.ws.aiohttp_client import AiohttpClient
+from ccxt_versions.v_4_3_18.async_support.base.ws.aiohttp_client import AiohttpClient
 
 
 class FastClient(AiohttpClient):

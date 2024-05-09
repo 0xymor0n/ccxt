@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-from ccxt.async_support.base.ws import order_book_side
-from ccxt import Exchange
+from ccxt_versions.v_4_3_18.async_support.base.ws import order_book_side
+from ccxt_versions.v_4_3_18 import Exchange
 import sys
 
 
